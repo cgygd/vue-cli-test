@@ -20,7 +20,7 @@ export default function(router) {
                         require(['./views/order/Orderlist'], resolve)
                     }
                 },
-                '/details': {
+                '/details/:orderid': {
                     component(resolve) {
                         require(['./views/order/Orderdetails'], resolve)
                     }

@@ -3,7 +3,7 @@
         <h2>列表页,二级路由</h2>
         <ul>
             <li v-for="item in items">
-                <a v-link='{ path: "/orderlist/details" }'>
+                <a v-link='{ path: "/orderlist/details/"+$index}'>
                     点击查看三级路由[详情页]{{ $index }}
                 </a>
             </li>
