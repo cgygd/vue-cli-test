@@ -1,5 +1,6 @@
 <template>
     <div class="main marginTop100">
+        <Display></Display>
         <h2>列表页,二级路由</h2>
         <ul>
             <li v-for="item in items">
@@ -12,7 +13,11 @@
     </div>
 </template>
 <script type="text/javascript">
+    import Display from '../../components/Display'
     export default{
+        components:{
+            Display,
+        },
         data(){
             return{
                 items: 10
