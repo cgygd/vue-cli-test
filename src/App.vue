@@ -1,11 +1,9 @@
 <template>
-
-    <div id="app">
-        <menu></menu>
+    <menu></menu>
+    <div id="app" class="container">
         <router-view keep-alive></router-view>
-        <foot></foot>
     </div>
-
+    <foot></foot>
 </template>
 
 <script>

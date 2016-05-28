@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click='jianshao'>Increment-1</button>
+        <button @click='jianshao' class="btn btn-primary">Increment -1</button>
         <h3 style="color:#ff0000">vuex跨组件状态测试值：Count is {{ counterValue }}</h3>
     </div>
 </template>
