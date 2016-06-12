@@ -83,6 +83,10 @@
     </div>
 </div>
 
+<p>
+    <button @click="test()" type="button" name="button">1111</button>
+</p>
+
 </template>
 
 <script type="text/javascript">
@@ -91,7 +95,11 @@
             show: {
                 type: Boolean,
                 required: true,
-                twoWay: true
+            }
+        },
+        methods:{
+            test:function(){
+                console.log(this.show);
             }
         }
     }

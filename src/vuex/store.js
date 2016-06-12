@@ -7,7 +7,8 @@ Vue.use(Vuex)
 // 创建一个 object 存储应用启动时的状态
 const state = {
     // 应用启动时，count 置为0
-    count: 0
+    count: 0,
+    showmodal:false
 }
 
 // 创建一个 object 存储 mutation 函数
@@ -22,6 +23,10 @@ const mutations = {
             return
         }
         state.count = state.count - amount
+    },
+    SHOWMODAL(state,res){
+        state.showmodal=res;
+        console.log('这里是最终状态：'+state.showmodal);
     }
 }
 
