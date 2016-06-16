@@ -8,7 +8,6 @@
     <Display :orderid='$route.params.orderid'></Display>
     <button @click="setModal()">Show Modal</button>
     <Modaltest :showbox="ShowModal"></Modaltest>
-
     <h1 v-show="ShowModal">Hello!</h1>
     {{ShowModal}}
 </div>
@@ -24,6 +23,9 @@ export default {
     components: {
         Display,
         Modaltest
+    },
+    created: function () {
+        console.log('An instance of MyComponent has been created!')
     },
     vuex:{
         getters:{

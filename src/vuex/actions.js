@@ -8,6 +8,6 @@ export const jianshaoCounter=function({dispatch, state}){
     dispatch('JIANSHAO',1);
 }
 export const showModal=function({dispatch, state},data){
-    console.log('这里是action：'+data);
+    console.log(data);
     dispatch('SHOWMODAL',data);
 }
