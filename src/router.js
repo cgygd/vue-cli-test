@@ -32,6 +32,11 @@ export default function(router) {
                 require(['./views/Test'], resolve)
             }
         },
+        '/faq': {
+            component(resolve) {
+                require(['./views/faq'], resolve)
+            }
+        },
     })
 
     router.beforeEach(({
