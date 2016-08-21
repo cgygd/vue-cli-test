@@ -5,3 +5,9 @@
 export function getCount (state) {
     return state.count
 }
+
+export function getShowmodal (state) {
+    console.log('这里是取值：'+state.showmodal)
+    console.log('取值判断类型：'+typeof(state.showmodal));
+    return state.showmodal
+}
