@@ -40,8 +40,27 @@ import doc from './Doc'
 
 import vSelect from '../components/selecte/Select'
 
+import Promise from 'thenfail';
+
 
 export default {
+    ready(){
+        console.log('aaaaaa');
+        var foo=false
+        var bar=true
+        Promise.then(() => {
+            if (foo) {
+                return Promise.resolve('foo');
+            } else if (bar) {
+                return 'bar';
+            } else {
+                throw new Error();
+            }
+        })
+        .then(value => {
+            console.log(value);
+        });
+    },
     components: {
         Hello,
         alert,
